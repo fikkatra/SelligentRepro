@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "npm run android:q8:tst",
+    "android": "npm run android:q8:dev",
     "android:q8:local": "react-native run-android --mode=Q8localDebug --appId com.kpnwe.q8.local",
     "android:q8:dev": "react-native run-android --mode=Q8devDebug --appId com.kpnwe.q8.dev",
     "android:q8:tst": "react-native run-android --mode=Q8tstDebug --appId com.kpnwe.q8.tst",
@@ -15,6 +15,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@selligent-marketing-cloud/selligent-react-native": "^3.4.1",
     "react": "18.2.0",
     "react-native": "0.72.6"
   },
