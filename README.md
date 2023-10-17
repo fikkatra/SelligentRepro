@@ -23,7 +23,7 @@ This produces a build error:
 > FAILURE: Build failed with an exception.
 > 
 > Where:
-> Build file '/Users/sophietraen/Projects/POCS/kpnwe/node_modules/@selligent-marketing-cloud/selligent-react-native/android/build.gradle' line: 101
+> Build file '.../kpnwe/node_modules/@selligent-marketing-cloud/selligent-react-native/android/build.gradle' line: 101
 > 
 > What went wrong:
 > A problem occurred configuring project ':selligent-marketing-cloud_selligent-react-native'.
