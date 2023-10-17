@@ -80,6 +80,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        resValue "string", "build_config_package", "com.kpnwe"
     }
     signingConfigs {
         debug {
@@ -92,6 +93,7 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            matchingFallbacks = ['debug', 'release']
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
@@ -99,6 +101,19 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        q8dev {
+            applicationId "com.kpnwe.q8.dev"
+        }
+        q8tst {
+            applicationId "com.kpnwe.q8.tst"
+        }
+        q8prd {
+            applicationId "com.kpnwe.q8.prd"
         }
     }
 }

@@ -3,8 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "npm run android:q8:tst",
+    "android:q8:local": "react-native run-android --mode=Q8localDebug --appId com.kpnwe.q8.local",
+    "android:q8:dev": "react-native run-android --mode=Q8devDebug --appId com.kpnwe.q8.dev",
+    "android:q8:tst": "react-native run-android --mode=Q8tstDebug --appId com.kpnwe.q8.tst",
+    "android:q8:uat": "react-native run-android --mode=Q8uatDebug --appId com.kpnwe.q8.uat",
+    "android:q8:prd": "react-native run-android --mode=Q8prdDebug --appId com.kpnwe.q8.prd",
+    "ios": "npm run io",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
